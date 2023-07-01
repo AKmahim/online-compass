@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Compass</title>
+  <style>
+    .compass {
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      border-radius: 50%;
+      position: relative;
+      margin: 50px auto;
+      transform: rotate(0deg);
+      transition: transform 0.8s;
+    }
+    .needle {
+      position: absolute;
+      width: 2px;
+      height: 100px;
+      background-color: red;
+      top: 50%;
+      left: 50%;
+      transform-origin: bottom center;
+      transition: transform 0.8s;
+    }
+  </style>
+</head>
+<body>
+  <div class="compass">
+    <div class="needle"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
